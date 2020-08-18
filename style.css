@@ -1,0 +1,253 @@
+*{margin:0; padding:0; box-sizing:border-box;}
+a{text-decoration:none;}
+html{
+	scroll-behavior:smooth;
+}
+a:hover{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+p{
+	font-size:0.9rem;
+	line-height:1.6;
+	font-weight:400;
+	color:#606060;
+	
+}
+/**************Actual css ***********/
+.section{
+	padding:60px 0px;;
+}
+.header{
+	width:100%;
+	height:100vh;
+	background-image:linear-gradient(rgba(0,168,255,0.3), rgba(0,168,255,0.3)), url('images/44.jpg');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	position:relative;
+	clip-path:polygon(100% 0%,100% 77%, 50% 100%, 0% 77%, 0% 0%);
+}
+.header:before{
+	content:"";
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	opacity:0.3;
+	z-index:-1;
+	background:linear-gradient(to right, #1e5799 0%,#3ccdbb 0%, #16c9f6 100%);
+}
+.navbar:before{
+	content:"";
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	width:100%;
+	height:100%;
+	opacity:0.3;
+	z-index:-1;
+	background:linear-gradient(to right, #1e5799 0%,#3ccdbb 0%, #16c9f6 100%);
+}
+.navbar-brand img{
+	height:70px;
+	width:250px;
+	//display:inline-block;
+	//background:white;
+	opacity:0px;
+	
+}
+.navbar-brand{
+	padding:0px;
+}
+.nav-item a{
+	color:#fff;
+	font-weight:bold;
+}
+.nav-item a:hover{
+	color:black !important;
+}
+.header-section{
+	width:100%;
+	height:inherit;
+	color:white;
+	text-align:center;
+	position:relative;
+}
+.section .section-head h3{
+	text-shadow:1px 1px 5px rgba(0,0,0,0.3);
+}
+.section .section-head h3:after{
+	background:linear-gradient( #1e5799 0%,#3ccdbb 0%, #16c9f6 100%);
+	content:"";
+	display:block;
+	width:120px;
+	height:3px;
+	margin:20px auto;
+}
+.center-div{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+}
+.header-buttons a{
+	border:1px solid #fff;
+	border-radius:100px;
+	margin:0 5px;
+	padding:12px 35px;
+	color:#fff;
+	font-size:1rem;
+	font-weight:400;
+	text-align:center;
+	line-height:1.4;
+}
+.header-buttons a:hover{
+	color:#50d1c0;
+	background:#fff;
+	text-decoration:none;
+	box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+.center-div h1{
+		
+		font-family:serif;
+}
+.center-div p{
+	color:#fff;
+	font-size:1.3rem;
+	padding:10px 0 20px 0;
+}
+/***************Extra div***************/
+.extra-div{
+	padding:30px;
+	border-radius:3px;
+	transition:0.3s;
+}
+.extra-div:hover{
+	transform:translateY(-20px);
+	box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+.extra-div:hover h5,.extra-div:hover p{
+	color:#00abff;
+}
+.extra-div p{
+	padding:5px 20px;
+}
+.extra-div i.fa{
+	color:#2fccd0;
+	margin-bottom:15px; 
+}
+.section-head{
+	margin-bottom:40px;
+}
+/***************How it works************/
+.names p:hover {
+	color:#00abff;
+}
+.names h5{
+	color:#00abff;
+}
+/***************ability**********************/
+.ability img{
+	height:135px;
+	width:132px;
+	margin-bottom:3px;
+}
+.ability h5{
+	color:#00abff;
+}
+/****************Choose us********************/
+.choose p:hover {
+	color:#00abff;
+}
+.choose h5{
+	color:#00abff;
+}
+}
+/**************PRICING**********************/
+	tr:nth-child(even){
+		background-color:skyblue;
+		color:white;
+	}
+	tr:nth-child(odd){
+		background-color:#00abff;
+		color:white;
+	}
+tbody tr{
+	font-size:20px;
+}	
+thead tr{
+	font-size:18px;
+}
+.table{
+	box-shadow:0 0 10px rgba(0,0,0,0.3);
+	
+}
+
+/******************footer section**********************/
+.footer{
+	background:#00abff;
+	box-sizing:border-box;
+	padding:70px 0 10px 0;
+}
+.footer p{
+	color:white;
+}
+.footer h5{
+	line-height:2.2rem;
+	text-shadow:0px 2px 5px rgba(0,0,0,0.4);
+}
+.footer li a{
+	color:white;
+}
+.footer-bar p{
+	margin-top:60px;
+}
+.footer h5:after{
+	background:white;
+	content:"";
+	display:block;
+	width:100px;
+	height:2px;
+	margin:5px 0px;
+}
+.footer img{
+	height:135px;
+	width:132px;
+	
+}
+/****************media quary***************/
+
+@media (max-width:768px){
+	.pricing{
+		height:auto;
+		margin-top:50px;
+	}
+	.center-div h1{
+		font-size:35px;
+		font-family:serif;
+	}
+	.fa .fa-phone{
+		font-size:10px;
+	}
+	.second-card{
+		transform:translatey(0px);
+		margin:30px ;
+	}
+	.nevigation{
+		text-align:left;
+	}
+	.second-extra-div{
+		margin:20px 0px;
+	}
+	.contact p{
+		padding:0px 50px;
+	}
+}
